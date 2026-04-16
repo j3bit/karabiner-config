@@ -1,0 +1,15 @@
+# Local machine-specific sync config
+scripts/repo-sync.local.env
+
+# Local runtime artifacts from repo-sync hotkey
+logs/
+state/
+
+# Karabiner-generated backups
+automatic_backups/
+
+# OMX local planning/runtime state
+.omx/
+
+# macOS finder metadata
+.DS_Store
