@@ -4,6 +4,19 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "F18 -> system sleep",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f18",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/bin/sh \"$HOME/.config/karabiner/scripts/system-sleep.sh\"" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "F19 -> repo auto-backup sync",
                         "manipulators": [
                             {
