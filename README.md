@@ -2,8 +2,8 @@
 
 Minimal Karabiner-Elements config for one hotkey:
 
-- `F16` runs `scripts/repo-sync.sh`
-- the script auto-backs up a target git repo by:
+- `F19` runs `scripts/repo-sync.sh`
+- the repo sync script auto-backs up a target git repo by:
   - validating the repo and upstream
   - creating a backup commit when the worktree is dirty
   - fetching and rebasing onto upstream
@@ -12,7 +12,7 @@ Minimal Karabiner-Elements config for one hotkey:
 
 ## Files
 
-- `karabiner.json` — Karabiner profile with the F16 rule
+- `karabiner.json` — Karabiner profile with the `F19` rule
 - `scripts/repo-sync.sh` — sync logic
 - `scripts/repo-sync.example.env` — setup template
 - `.gitignore` — excludes local config, logs, runtime state, backups, and OMX state
@@ -33,7 +33,7 @@ Choose one:
 `karabiner.json` in this repo is a **full top-level config file**, not just a rule snippet. Either:
 
 - replace your existing config intentionally, or
-- merge the `F16 -> repo auto-backup sync` rule into your existing Karabiner profile manually
+- merge the `F19 -> repo auto-backup sync` rule into your existing Karabiner profile manually
 
 ## Local setup
 

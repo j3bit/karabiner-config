@@ -4,11 +4,11 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "F16 -> repo auto-backup sync",
+                        "description": "F19 -> repo auto-backup sync",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f16",
+                                    "key_code": "f19",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "/bin/sh \"$HOME/.config/karabiner/scripts/repo-sync.sh\"" }],
