@@ -2,8 +2,8 @@
 
 Minimal Karabiner-Elements config for two hotkeys:
 
-- `F18` runs `scripts/system-sleep.sh` and puts macOS to sleep
-- `F19` runs `scripts/repo-sync.sh`
+- `F18` turns the display off when tapped, and runs `scripts/system-sleep.sh` to put macOS to sleep when held for 500 ms
+- `F24` runs `scripts/repo-sync.sh`
 - the repo sync script auto-backs up a target git repo by:
   - validating the repo and upstream
   - creating a backup commit when the worktree is dirty
@@ -13,7 +13,7 @@ Minimal Karabiner-Elements config for two hotkeys:
 
 ## Files
 
-- `karabiner.json` — Karabiner profile with the `F18` and `F19` rules
+- `karabiner.json` — Karabiner profile with the `F18` and `F24` rules
 - `scripts/system-sleep.sh` — sleep trigger logic
 - `scripts/repo-sync.sh` — sync logic
 - `scripts/repo-sync.example.env` — setup template
@@ -36,7 +36,7 @@ Choose one:
 `karabiner.json` in this repo is a **full top-level config file**, not just a rule snippet. Either:
 
 - replace your existing config intentionally, or
-- merge the `F18 -> system sleep` and `F19 -> repo auto-backup sync` rules into your existing Karabiner profile manually
+- merge the `F18 tap -> display sleep, hold -> system sleep` and `F24 -> repo auto-backup sync` rules into your existing Karabiner profile manually
 
 ## Local setup
 
