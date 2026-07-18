@@ -32,6 +32,19 @@
                         ]
                     },
                     {
+                        "description": "F23 -> Homebrew config sync",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f23",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/bin/sh \"$HOME/.config/homebrew/sync.sh\"" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "F24 -> repo auto-backup sync",
                         "manipulators": [
                             {
