@@ -17,14 +17,14 @@
                                 },
                                 "to_if_alone": [
                                     {
-                                        "shell_command": "/usr/bin/pmset displaysleepnow",
-                                        "repeat": false
+                                        "repeat": false,
+                                        "shell_command": "/usr/bin/pmset displaysleepnow"
                                     }
                                 ],
                                 "to_if_held_down": [
                                     {
-                                        "shell_command": "/bin/sh \"$HOME/.config/karabiner/scripts/system-sleep.sh\"",
-                                        "repeat": false
+                                        "repeat": false,
+                                        "shell_command": "/bin/sh \"$HOME/.config/karabiner/scripts/system-sleep.sh\""
                                     }
                                 ],
                                 "type": "basic"
